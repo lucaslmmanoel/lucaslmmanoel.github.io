@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lucas Manoel</title>
+    <!-- Conectando com o materialize css -->
+    <link rel="stylesheet" href="./resources/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="myStyle.css">
+    <style>
+        .carousel .carousel-item {
+            width: 300px !important;
+            height: 200px;
+            margin-top: 0%;
+        }
+    </style>
+</head>
+
+<body style="background: #161616">
+    <!-- start Navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper indigo darken-4">
+                <div class="container">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#!">Music</a>
+                        </li>
+                        <li>
+                            <a href="#!">Sports</a>
+                        </li>
+                        <li>
+                            <a href="#!">Plants</a>
+                        </li>
+                        <li>
+                            <a href="#!">Tech Life</a>
+                        </li>
+                        <li>
+                            <a href="#!">About me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/office.jpg">
+                </div>
+                <a href="#user">
+                    <img class="circle" src="images/yuna.jpg">
+                </a>
+                <a href="#name">
+                    <span class="black-text name">John Doe</span>
+                </a>
+                <a href="#email">
+                    <span class="black-text email">jdandturk@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <a href="#!">Music</a>
+        </li>
+        <li>
+            <a href="#!">Sports</a>
+        </li>
+        <li>
+            <a href="#!">Plants</a>
+        </li>
+        <li>
+            <a href="#!">Tech Life</a>
+        </li>
+        <li>
+            <a href="#!">About me</a>
+        </li>
+    </ul>
+    <!-- End navbar -->
+
+    <div class="row" style="margin-top: 0%">
+        <div class="col s12 l12 m12 center-align">
+            <h2 class="white-text">
+                <b> Welcome to my WebSite</b>
+            </h2>
+            <p class="flow-text white-text">My name is Lucas Manoel, i am a art lover, that likes to share a lot of cool content, with quality!!!</p>
+            <div class="section scrollspy " id="arrow">
+                <a href="#arrow">
+                    <i class="material-icons large indigo darken-4 z-depth-5">arrow_downward</i>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="rellax d2" data-rellax-speed="6">
+            <img src="2.png" width="100%" />
+            <div class="container" >
+
+                <div class="rellax d3" id="arrow" data-rellax-speed="8">
+                    <img src="3.png" width="100%" />
+                    <div class="rellax" data-rellax-speed="1">
+                        <div class="col s8 m8 l8">
+                            <img src="MSG.png" width="150%" />
+                        </div>
+                    </div>
+                </div>
+                <div class="rellax d4" data-rellax-speed="2">
+                    <img src="4.png" width="90%" />
+                    <div class="container-fluid">
+                            <div class="rellax d1">
+                                <img src="1.png" width="70%" />
+                                <div class="col s12" style="margin-top: 0%">
+                                    <div class="carousel center-align">
+                                        <a href="#!" class="carousel-item">
+                                            <img class="z-depth-4" src="./resources/imgs/start.jpg">
+                                            <button class="btn blue" style="margin-top: 0%">teste</button>
+                                        </a>
+                                        <a href="#!" class="carousel-item">
+                                            <img class="responsive-img" src="./resources/imgs/start.jpg">
+                                        </a>
+                                        <a href="#!" class="carousel-item">
+                                            <img class="responsive-img" src="./resources/imgs/start.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Web Site Contentet -->
+        <!--Container -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.carousel');
+                var instances = M.Carousel.init(elems, {
+                    indicators: true,
+                    duration: 700,
+                    shift: 15
+                });
+            });
+        </script>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h1>content</h1>
+                <div class="card purple darken-4">
+                    <div class="card-content white-text">
+                        <span class="card-title">Music</span>
+                        <p> Run, rabbit run Dig that hole, forget the sun And when at last the work is done Don't sit down, it's
+                            time to dig another one !!!
+                        </p>
+                    </div>
+                    <div class="card-action white-text right-align">
+                        Pink Floyd - Breathe
+                    </div>
+                </div>
+                <div class="card purple darken-4">
+                    <div class="card-content white-text">
+                        <span class="card-title">Inspiration</span>
+                        <p> Run, rabbit run Dig that hole, forget the sun And when at last the work is done Don't sit down, it's
+                            time to dig another one !!!
+                        </p>
+                    </div>
+                    <div class="card-action white-text right-align">
+                        Pink Floyd - Breathe
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End container -->
+
+    <!-- sidenav script -->
+    <script src="./resources/rellax.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <!-- rellax.js script -->
+    <script>
+        var rellax = new Rellax('.rellax', {
+            callback: function (position) {
+                console.log(position);
+            }
+        });
+    </script>
+    <!-- Coneectando ao js do rellax js -->
+    <!-- Conectando com o materialize js -->
+    <script src="./resources/materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
