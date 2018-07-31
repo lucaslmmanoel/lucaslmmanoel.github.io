@@ -7,16 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lucas Manoel</title>
     <!-- Conectando com o materialize css -->
-    <link rel="stylesheet" href="./resources/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./resources/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+
     <style>
         .carousel .carousel-item {
             width: 300px !important;
             height: 200px;
             margin-top: 0%;
         }
+
+        .parallax-container {
+            height: 40vh;
+        }
     </style>
+
+    <!-- Coneectando ao js do rellax js -->
+    <script src="./resources/js/rellax.min.js"></script>
 </head>
 
 <body style="background: #161616">
@@ -25,25 +36,35 @@
         <nav>
             <div class="nav-wrapper indigo darken-4">
                 <div class="container">
-                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#!" class="brand-logo">LM</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                        <i class="material-icons">menu</i>
+                        <span class="fa fa-bars"></span>
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a href="#!">Music</a>
+                            <a href="#!">Music
+                                <i class="fa fa-music"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#!">Sports</a>
+                            <a href="#!">Sports
+                                <i class="fa fa-bicycle"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#!">Plants</a>
+                            <a href="#!">Plants
+                                <i class="fa fa-cannabis"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#!">Tech Life</a>
+                            <a href="#!">Tech Life
+                                <i class="fa fa-code"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#!">About me</a>
+                            <a href="#!">About me
+                                <i class="fa fa-user"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -54,44 +75,63 @@
         <li>
             <div class="user-view">
                 <div class="background">
-                    <img src="images/office.jpg">
+                    <img src="">
                 </div>
                 <a href="#user">
-                    <img class="circle" src="images/yuna.jpg">
+                    <img class="circle" src="">
                 </a>
                 <a href="#name">
-                    <span class="black-text name">John Doe</span>
+                    <span class="black-text name">Lucas Manoel</span>
                 </a>
                 <a href="#email">
-                    <span class="black-text email">jdandturk@gmail.com</span>
+                    <span class="black-text email">lucaslmmanoel5@gmail.com</span>
                 </a>
             </div>
         </li>
         <li>
-            <a href="#!">Music</a>
+            <a href="#!">Music
+                <i class="fa fa-music"></i>
+            </a>
         </li>
         <li>
-            <a href="#!">Sports</a>
+            <a href="#!">Sports
+                <i class="fa fa-bicycle"></i>
+            </a>
         </li>
         <li>
-            <a href="#!">Plants</a>
+            <a href="#!">Plants
+                <i class="fa fa-cannabis"></i>
+            </a>
         </li>
         <li>
-            <a href="#!">Tech Life</a>
+            <a href="#!">Tech Life
+                <i class="fa fa-code"></i>
+            </a>
         </li>
         <li>
-            <a href="#!">About me</a>
+            <a href="#!">About me
+                <i class="fa fa-user"></i>
+            </a>
         </li>
     </ul>
     <!-- End navbar -->
+    <div class="parallax-container" style="margin-top: 0%">
+        <div class="parallax">
+            <img class="responsive-img" src="./resources/imgs/teste.jpg">
+        </div>
+    </div>
 
     <div class="row" style="margin-top: 0%">
         <div class="col s12 l12 m12 center-align">
             <h2 class="white-text">
-                <b> Welcome to my WebSite</b>
+                <b>Welcome to my WebSite</b>
             </h2>
-            <p class="flow-text white-text">My name is Lucas Manoel, i am a art lover, that likes to share a lot of cool content, with quality!!!</p>
-            <div class="section scrollspy " id="arrow">
+            <p class="flow-text white-text">My name is Lucas Manoel, i am a art lover and web developer!
+                <br> I like to share a lot of cool content, and here have a lot!!!
+                <br> Clique na seta e veja mais
+            </p>
+
+            <div>
                 <a href="#arrow">
                     <i class="material-icons large indigo darken-4 z-depth-5">arrow_downward</i>
                 </a>
@@ -102,7 +142,7 @@
 
         <div class="rellax d2" data-rellax-speed="6">
             <img src="2.png" width="100%" />
-            <div class="container" >
+            <div class="container">
 
                 <div class="rellax d3" id="arrow" data-rellax-speed="8">
                     <img src="3.png" width="100%" />
@@ -114,43 +154,32 @@
                 </div>
                 <div class="rellax d4" data-rellax-speed="2">
                     <img src="4.png" width="90%" />
-                    <div class="container-fluid">
-                            <div class="rellax d1">
-                                <img src="1.png" width="70%" />
-                                <div class="col s12" style="margin-top: 0%">
-                                    <div class="carousel center-align">
-                                        <a href="#!" class="carousel-item">
-                                            <img class="z-depth-4" src="./resources/imgs/start.jpg">
-                                            <button class="btn blue" style="margin-top: 0%">teste</button>
-                                        </a>
-                                        <a href="#!" class="carousel-item">
-                                            <img class="responsive-img" src="./resources/imgs/start.jpg">
-                                        </a>
-                                        <a href="#!" class="carousel-item">
-                                            <img class="responsive-img" src="./resources/imgs/start.jpg">
-                                        </a>
-                                    </div>
+                    <div id="arrow" class="container-fluid scrollspy">
+                        <div class="rellax d1">
+                            <img src="1.png" width="70%" />
+                            <div class="col s12" style="margin-top: 0%">
+                                <div class="carousel center-align">
+                                    <a href="#!" class="carousel-item">
+                                        <img class="z-depth-4" src="./resources/imgs/start.jpg">
+                                        <button class="btn blue" style="margin-top: 0%">teste</button>
+                                    </a>
+                                    <a href="#!" class="carousel-item">
+                                        <img class="responsive-img" src="./resources/imgs/start.jpg">
+                                    </a>
+                                    <a href="#!" class="carousel-item">
+                                        <img class="responsive-img" src="./resources/imgs/start.jpg">
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Web Site Contentet -->
-        <!--Container -->
+        <br>
+        <br>
+        <!-- Talking about the contents -->
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.carousel');
-                var instances = M.Carousel.init(elems, {
-                    indicators: true,
-                    duration: 700,
-                    shift: 15
-                });
-            });
-        </script>
-        <br>
-        <br>
         <div class="row">
             <div class="col s12 m12 l12">
                 <h1>content</h1>
@@ -181,12 +210,21 @@
     </div>
     <!-- End container -->
 
+    <!-- sccrollspy script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(elems);
+        });
+    </script>
+
     <!-- sidenav script -->
-    <script src="./resources/rellax.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
+            var instances = M.Sidenav.init(elems, {
+                scrollOffset: 0
+            });
         });
     </script>
     <!-- rellax.js script -->
@@ -197,9 +235,28 @@
             }
         });
     </script>
-    <!-- Coneectando ao js do rellax js -->
+    <!-- Parallax js -->
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
+
+    </script>
+    <!-- Carousel script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                indicators: true,
+                duration: 700,
+                shift: 15
+            });
+        });
+    </script>
     <!-- Conectando com o materialize js -->
-    <script src="./resources/materialize/js/materialize.min.js"></script>
+    <script src="./resources/js/materialize.min.js"></script>
 </body>
 
-</html>
+</html>0
