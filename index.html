@@ -22,7 +22,7 @@
         }
 
         .parallax-container {
-            height: 40vh;
+            height: 25vh;
         }
     </style>
 
@@ -74,17 +74,19 @@
     <ul class="sidenav" id="mobile-demo">
         <li>
             <div class="user-view">
-                <div class="background">
-                    <img src="">
+                <div class="background indigo darken-4">
                 </div>
                 <a href="#user">
-                    <img class="circle" src="">
+                    <img class="circle" src="./resources/imgs/me.jpg">
                 </a>
                 <a href="#name">
-                    <span class="black-text name">Lucas Manoel</span>
+                    <span class=" white-text name">
+                        <b> Lucas Manoel </b>
+                    </span>
                 </a>
                 <a href="#email">
-                    <span class="black-text email">lucaslmmanoel5@gmail.com</span>
+                    <span class="email white-text">
+                        <span class="fa fa-envelope"></span> lucaslmmanoel5@gmail.com</span>
                 </a>
             </div>
         </li>
@@ -127,11 +129,11 @@
                 <b>Welcome to my WebSite</b>
             </h2>
             <p class="flow-text white-text">My name is Lucas Manoel, i am a art lover and web developer!
-                <br> I like to share a lot of cool content, and here have a lot!!!
-                <br> Clique na seta e veja mais
+                <br> I like to share a lot of cool content, and here i have a lot!!!
+                <br> Click on Arrow to see more about
             </p>
 
-            <div>
+            <div class="fixed">
                 <a href="#arrow">
                     <i class="material-icons large indigo darken-4 z-depth-5">arrow_downward</i>
                 </a>
@@ -140,37 +142,38 @@
         </div>
 
 
-        <div class="rellax d2" data-rellax-speed="6">
-            <img src="2.png" width="100%" />
+        <div class="rellax" data-rellax-speed="6">
+            <img src="./resources/imgs/1.png" width="100%" />
             <div class="container">
-
-                <div class="rellax d3" id="arrow" data-rellax-speed="8">
-                    <img src="3.png" width="100%" />
+                <div class="rellax" id="arrow" data-rellax-speed="8">
+                    <img src="./resources/imgs/2.png" width="100%" />
                     <div class="rellax" data-rellax-speed="1">
                         <div class="col s8 m8 l8">
                             <img src="MSG.png" width="150%" />
                         </div>
                     </div>
+                    <div id="arrow" class="col s12" style="margin-top: 0%">
+                        <div class="carousel center-align">
+                            <a href="#!" class="carousel-item">
+                                <img class="z-depth-4" src="./resources/imgs/start.jpg">
+                                <button class="btn blue" style="margin-top: 0%">teste</button>
+                            </a>
+                            <a href="#!" class="carousel-item">
+                                <img class="responsive-img" src="./resources/imgs/start.jpg">
+                            </a>
+                            <a href="#!" class="carousel-item">
+                                <img class="responsive-img" src="./resources/imgs/start.jpg">
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="rellax d4" data-rellax-speed="2">
-                    <img src="4.png" width="90%" />
-                    <div id="arrow" class="container-fluid scrollspy">
+
+                <div class="rellax" data-rellax-speed="2">
+                    <img src="./resources/imgs/2.png" width="90%" />
+                    <div style="margin-top: 10%" class="container-fluid">
                         <div class="rellax d1">
-                            <img src="1.png" width="70%" />
-                            <div class="col s12" style="margin-top: 0%">
-                                <div class="carousel center-align">
-                                    <a href="#!" class="carousel-item">
-                                        <img class="z-depth-4" src="./resources/imgs/start.jpg">
-                                        <button class="btn blue" style="margin-top: 0%">teste</button>
-                                    </a>
-                                    <a href="#!" class="carousel-item">
-                                        <img class="responsive-img" src="./resources/imgs/start.jpg">
-                                    </a>
-                                    <a href="#!" class="carousel-item">
-                                        <img class="responsive-img" src="./resources/imgs/start.jpg">
-                                    </a>
-                                </div>
-                            </div>
+                            <img src="./resources/imgs/1.png" width="70%" />
                         </div>
                     </div>
                 </div>
